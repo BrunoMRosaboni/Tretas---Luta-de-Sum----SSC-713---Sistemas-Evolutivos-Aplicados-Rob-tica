@@ -1,0 +1,149 @@
+﻿Build started 23/11/2015 18:30:17.
+     1>Project "C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\evolutivos_teste.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TC /errorReport:prompt "..\..\..\..\..\..\..\..\..\Program Files (x86)\V-REP3\V-REP_PRO_EDU\programming\remoteApi\extApi.c" "..\..\..\..\..\..\..\..\..\Program Files (x86)\V-REP3\V-REP_PRO_EDU\programming\remoteApi\extApiPlatform.c"
+         extApiPlatform.c
+         Adding library: Winmm.lib
+         Adding library: Ws2_32.lib
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(69): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(69): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(69): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(70): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(70): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(70): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(71): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(71): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(71): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(72): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(72): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(72): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(74): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(74): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(74): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(75): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(75): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(75): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(76): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(76): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(76): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(77): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(77): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(77): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(79): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(79): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(79): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(80): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(80): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiplatform.c(80): error C2466: cannot allocate an array of constant size 0
+         extApi.c
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(41): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(41): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(41): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(42): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(42): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(42): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(43): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(43): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(43): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(46): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(46): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(46): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(47): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(47): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(47): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(48): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(48): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(48): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(51): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(51): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(51): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(52): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(52): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(52): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(53): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(53): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(53): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(56): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(56): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(56): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(57): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(57): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(57): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(58): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(58): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(58): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(61): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(61): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(61): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(62): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(62): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(62): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(63): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(63): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(63): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(66): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(66): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(66): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(67): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(67): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(67): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(69): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(69): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(69): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(70): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(70): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(70): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(72): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(72): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(72): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(73): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(73): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(73): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(74): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(74): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(74): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(75): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(75): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(75): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(76): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(76): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(76): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(77): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(77): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(77): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(78): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(78): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(78): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(79): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(79): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(79): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(80): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(80): error C2057: expected constant expression
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapiinternal.h(80): error C2466: cannot allocate an array of constant size 0
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(67): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(112): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(123): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(172): error C2065: 'SIMX_HEADER_SIZE': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(206): error C2065: '_communicationThread': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(206): warning C4047: 'function': 'simxVoid (__cdecl *)(simxVoid *)' differs in levels of indirection from 'int'
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(206): warning C4024: 'extApi_launchThread': different types for formal and actual parameter 1
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(228): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(246): warning C4013: '_exec_int' undefined; assuming extern returning int
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(246): error C2065: 'simx_cmd_kill_connection': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(246): error C2065: 'simx_opmode_oneshot': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(272): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(279): error C2065: 'simx_cmd_kill_connection': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(279): error C2065: 'simx_opmode_oneshot': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(287): error C2065: 'MAX_EXT_API_CONNECTIONS': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(332): error C2065: 'simx_return_timeout_flag': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(342): error C2065: 'simx_cmdheaderoffset_mem_size': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(356): error C2065: 'simx_cmdheaderoffset_status': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(357): error C2065: 'simx_cmdheaderoffset_sim_time': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(359): error C2065: 'simx_return_remote_error_flag': undeclared identifier
+     1>c:\program files (x86)\v-rep3\v-rep_pro_edu\programming\remoteapi\extapi.c(359): fatal error C1003: error count exceeds 100; stopping compilation
+         Generating Code...
+     1>Done Building Project "C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\evolutivos_teste.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.18

@@ -1,0 +1,22 @@
+﻿Build started 23/11/2015 21:36:15.
+     1>Project "C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\evolutivos_teste.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D MAX_EXT_API_CONNECTIONS=255 /D NON_MATLAB_PARSING /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Individuo.cpp
+         Individuo.cpp
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(155): warning C4305: 'argument': truncation from 'double' to 'simxFloat'
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(157): warning C4305: 'argument': truncation from 'double' to 'simxFloat'
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(236): warning C4305: 'argument': truncation from 'double' to 'simxFloat'
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(238): warning C4305: 'argument': truncation from 'double' to 'simxFloat'
+     1>c:\users\rodrigo\rodrigo\usp\8º semestre\evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\individuo.cpp(292): warning C4715: 'Individuo::stateName': not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\Debug\evolutivos_teste.exe" /INCREMENTAL /NOLOGO gsl.lib cblas.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\Debug\evolutivos_teste.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\Debug\evolutivos_teste.lib" /MACHINE:X86 Debug\extApi.obj
+         Debug\extApiPlatform.obj
+         Debug\Individuo.obj
+         Debug\vrep.obj
+         evolutivos_teste.vcxproj -> C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\Debug\evolutivos_teste.exe
+     1>Done Building Project "C:\Users\Rodrigo\Rodrigo\USP\8º Semestre\Evolutivos\vrep_c++\evolutivos_teste\evolutivos_teste\evolutivos_teste.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.64
