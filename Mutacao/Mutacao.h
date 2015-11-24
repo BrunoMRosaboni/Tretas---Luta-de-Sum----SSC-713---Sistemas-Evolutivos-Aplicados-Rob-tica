@@ -1,5 +1,5 @@
-#ifndef FUNCAO_H_
-#define FUNCAO_H_
+#ifndef MUTACAO_H_
+#define MUTACAO_H_
 
 #include <stdio.h>
 #include <time.h>
