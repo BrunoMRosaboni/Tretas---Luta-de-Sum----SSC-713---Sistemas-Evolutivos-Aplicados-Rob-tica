@@ -41,70 +41,129 @@ Exemplo:
 #define PESO_SUPERIORLIMITMUT 0.5
 #define PESO_INFERIORLIMITMUT -0.5
 
+/*
+* opcMutacao influencia na árvore de decisão
+* Se opcMutacao = 0 ===> então a semente será única
+* Se opcMutacao != 0 ===> então a semente sempre irá variar
+*/
 
-
-void mutacao(Individuo* AuxIndividuo)
+void mutacao(Individuo* AuxIndividuo, int opcMutacao)
 {
-	double Escolha, Seed;
+    double Escolha, Seed, MutEscolha;
 
-	srand((double)time(NULL));
+    srand((double)time(NULL));
 
-	/*Gera uma semente*/
-	GeraSemente(&Seed);
-	//Escolha = CalculaValores(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, &Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (VELATK_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		//Escolha = CalculaValores(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, &Seed);
-		Escolha = DistribuicaoUniforme(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->velAtk = AuxIndividuo->velAtk + Escolha;
-	}
-	
-	GeraSemente(&Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (VELDEF_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		Escolha = DistribuicaoUniforme(VELDEF_INFERIORLIMITMUT, VELDEF_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->velDef = AuxIndividuo->velDef + Escolha;
-	}
+    /*com uma unica semente ou com sementes variando*/
+    if (opcMutacao == 0)
+    {
+        /*Gera uma semente*/
+        GeraSemente(&Seed);
+        //Escolha = CalculaValores(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, &Seed);
+        MutEscolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (VELATK_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            //Escolha = CalculaValores(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, &Seed);
+            Escolha = DistribuicaoUniforme(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->velAtk = AuxIndividuo->velAtk + Escolha;
+        }
 
-	GeraSemente(&Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (TATK_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		Escolha = DistribuicaoUniforme(TATK_INFERIORLIMITMUT, TATK_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->tAtk = AuxIndividuo->tAtk + Escolha;
-	}
+        if (VELDEF_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(VELDEF_INFERIORLIMITMUT, VELDEF_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->velDef = AuxIndividuo->velDef + Escolha;
+        }
 
-	GeraSemente(&Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (TDEF_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		Escolha = DistribuicaoUniforme(TDEF_INFERIORLIMITMUT, TDEF_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->tDef = AuxIndividuo->tDef + Escolha;
-	}
+        if (TATK_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TATK_INFERIORLIMITMUT, TATK_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->tAtk = AuxIndividuo->tAtk + Escolha;
+        }
 
-	GeraSemente(&Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (TORQUE_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		Escolha = DistribuicaoUniforme(TORQUE_INFERIORLIMITMUT, TORQUE_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->torque = AuxIndividuo->torque + Escolha;
-	}
+        if (TDEF_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TDEF_INFERIORLIMITMUT, TDEF_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->tDef = AuxIndividuo->tDef + Escolha;
+        }
 
-	GeraSemente(&Seed);
-	Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
-	if (PESO_TAXADEMUTACAO > Escolha)
-	{
-		GeraSemente(&Seed);
-		Escolha = DistribuicaoUniforme(PESO_INFERIORLIMITMUT, PESO_SUPERIORLIMITMUT, Seed);
-		AuxIndividuo->peso = AuxIndividuo->peso + Escolha;
-	}
+        if (TORQUE_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TORQUE_INFERIORLIMITMUT, TORQUE_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->torque = AuxIndividuo->torque + Escolha;
+        }
+
+        if (PESO_TAXADEMUTACAO > MutEscolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(PESO_INFERIORLIMITMUT, PESO_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->peso = AuxIndividuo->peso + Escolha;
+        }
+    }
+    else
+    {
+        /*Gera uma semente*/
+        GeraSemente(&Seed);
+        //Escolha = CalculaValores(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, &Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (VELATK_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            //Escolha = CalculaValores(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, &Seed);
+            Escolha = DistribuicaoUniforme(VELATK_INFERIORLIMITMUT, VELATK_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->velAtk = AuxIndividuo->velAtk + Escolha;
+        }
+
+        GeraSemente(&Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (VELDEF_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(VELDEF_INFERIORLIMITMUT, VELDEF_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->velDef = AuxIndividuo->velDef + Escolha;
+        }
+
+        GeraSemente(&Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (TATK_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TATK_INFERIORLIMITMUT, TATK_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->tAtk = AuxIndividuo->tAtk + Escolha;
+        }
+
+        GeraSemente(&Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (TDEF_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TDEF_INFERIORLIMITMUT, TDEF_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->tDef = AuxIndividuo->tDef + Escolha;
+        }
+
+        GeraSemente(&Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (TORQUE_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(TORQUE_INFERIORLIMITMUT, TORQUE_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->torque = AuxIndividuo->torque + Escolha;
+        }
+
+        GeraSemente(&Seed);
+        Escolha = DistribuicaoUniforme(PROB_OCORRENCIAMUTINF, PROB_OCORRENCIAMUTSUP, Seed);
+        if (PESO_TAXADEMUTACAO > Escolha)
+        {
+            GeraSemente(&Seed);
+            Escolha = DistribuicaoUniforme(PESO_INFERIORLIMITMUT, PESO_SUPERIORLIMITMUT, Seed);
+            AuxIndividuo->peso = AuxIndividuo->peso + Escolha;
+        }
+    }
+
+
 }
 
 /*Antiga função para calculo de valores a partir de uma distribuição uniforme utilizando a biblioteca gsl*/
@@ -117,7 +176,7 @@ void mutacao(Individuo* AuxIndividuo)
   	T = gsl_rng_default;
   	r = gsl_rng_alloc (T);*/
 
-  	/*A linha a seguir atribui uma semente diferente toda vez que a função é exexutada*/
+/*A linha a seguir atribui uma semente diferente toda vez que a função é exexutada*/
 /*  	gsl_rng_set (r, *Seed);
 
   	Valor = gsl_ran_flat(r, LimiteInferior, LimiteSuperior);
@@ -129,22 +188,23 @@ void mutacao(Individuo* AuxIndividuo)
 
 void GeraSemente(double* Seed)
 {
-	double aux;
+    double aux;
 
-	do
-	{
-		aux = rand() % 1;
+    do
+    {
+        aux = rand() % 1;
 
-	}while(aux == *Seed);
+    }
+    while(aux == *Seed);
 
-	*Seed = aux;
+    *Seed = aux;
 }
 
 double DistribuicaoUniforme(double min, double max, double Seed)
 {
-	double x;
-	
-	x = (Seed * (max - min)) + min;
+    double x;
 
-	return x;
+    x = (Seed * (max - min)) + min;
+
+    return x;
 }
