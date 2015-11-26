@@ -8,7 +8,8 @@
 #include <gsl/gsl_randist.h>
 
 void mutacao(Individuo*);
-double CalculaValores(float , float , unsigned long int*);
-void GeraSemente(unsigned long int*);
+//double CalculaValores(float , float , unsigned long int*);
+void GeraSemente(double*);
+double DistribuicaoUniforme(double, double, double);
 
 #endif
